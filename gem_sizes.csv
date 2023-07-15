@@ -1,0 +1,10 @@
+name,value_category_delta,weight
+Tiny,-3,1
+Very Small,-2,1
+Small,-1,3
+Average,0,8
+Large,1,3
+Very Large,2,1
+Huge,3,1
+Massive,4,0.75
+Gargantuan,5,0.25

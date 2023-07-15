@@ -1,0 +1,33 @@
+name,value_mod,weight,ex_pool
+licorice,0.9,1,licorice
+sulfur,0.9,1,bad
+pungent alcohol,0.9,1,bad
+yeast,0.85,1,
+licorice,1.1,1,
+anise,1.1,1,licorice
+tennis ball,0.9,1,weird
+old shoe leather,0.9,1,weird
+truffles,1.5,0.5,savory
+butterscotch,1.1,1,sweet
+molasses,1,1,sweet
+geraniums,1,1,floral
+roses,1,1,floral
+apricots,1,1,fruit
+cured meats,1,1,meaty
+vanilla,1,1,floral
+walnut,1,1,meaty
+rosemary,1,1,floral
+hazelnut,1,1,floral
+eucalyptus,1,1,floral
+artichoke,1,1,weird
+grass,0.8,1,weird
+raisins,1,1,fruit
+cola,1,1,weird
+green beans,1,1,weird
+jalapeno,1,1,weird
+banana,1,1,fruit
+cigars,1,1,licorice
+tar,0.8,1,bad
+wet dog,0.8,1,weird
+fois gras,1.2,1,weird
+strong vinegar,0.5,0.75,bad

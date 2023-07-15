@@ -1,0 +1,13 @@
+name,value_category_delta,weight
+round brilliant ,1,0.5
+princess ,0,1
+baguette ,0,1
+teardrop ,0,1
+brilliant teardrop ,1,1
+rectangular ,0,1
+square ,0,1
+octogon ,0,1
+table ,0,1
+point ,0,1
+eight ,1,0.5
+un-,-1,10

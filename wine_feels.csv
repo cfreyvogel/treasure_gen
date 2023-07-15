@@ -1,0 +1,31 @@
+name,value_mod,weight,ex_pool
+quite acidic,0.75,1,acidity
+acidic,1,1,acidity
+pleasantly acidic,1.2,1,acidity
+austere,0.75,1,
+fecal,0.1,0.2,
+bright,1.1,1,
+buttery,1.1,1,
+smooth,1.2,1,
+jammy,1.2,1,
+crisp,1.2,1,
+dense,1,1,
+earthy,1,1,
+flabby,0.8,1,
+food-friendly,1.2,1,
+intellectually satisfying,1.1,1,
+refreshing,1.1,1,
+excessively oaky,0.75,1,oakiness
+pleasantly oaky,1.2,1,oakiness
+opulent,1.5,1,
+steely,0.9,1,
+leaden,0.66,1,
+musty,0.66,1,
+structured,1,1,
+unctuous,0.9,1,
+supple,1.1,1,
+astringent,1.1,1,
+spicy,1.1,1,
+smokey,1.1,1,
+reticent,1.1,1,
+velvety,1.2,1,

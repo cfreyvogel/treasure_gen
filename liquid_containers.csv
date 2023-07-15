@@ -1,0 +1,7 @@
+name,value_mod,oz,weight
+bottle,1,25,100
+personal waterskin,0.75,16,15
+large waterskin,0.6,256,3
+barrel,1.5,4032,0.1
+hogshead,1.5,8064,0.05
+tun,1.5,32256,0.01
