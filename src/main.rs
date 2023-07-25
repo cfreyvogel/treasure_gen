@@ -27,6 +27,14 @@ fn read_items<T: de::DeserializeOwned>(filename: &str) -> csv::Result<Vec<T>> {
     }
     Ok(items)
 }
+macro_rules! choose_random {
+    ($v: expr) => {
+        $v[WeightedIndex::new($v.iter().map(|x| x.weight))
+            .unwrap()
+            .sample(&mut thread_rng())]
+        .clone()
+    };
+}
 
 fn choose_generic_items(
     ls: &Vec<GenericItem>,
@@ -276,22 +284,15 @@ impl GemGenerator {
         }
     }
     fn create_random_gem(&self) -> Gem {
-        let gem_type = choose_random_gem_type(&self.gem_types);
+        // let gem_type = choose_random_gem_type(&self.gem_types);
+        let gem_type = choose_random!(&self.gem_types);
         let value: f64 = thread_rng().gen_range(gem_type.value_min..gem_type.value_max) as f64;
         Gem {
             mineral_type: gem_type,
             base_value: value,
-            cut: choose_random_gem_attribute(&self.gem_cuts),
-            size: choose_random_gem_attribute(&self.gem_sizes),
-            quality: choose_random_gem_attribute(&self.gem_clarities),
+            cut: choose_random!(&self.gem_cuts),
+            size: choose_random!(&self.gem_sizes),
+            quality: choose_random!(&self.gem_clarities),
         }
     }
-}
-fn choose_random_gem_type(ls: &Vec<GemType>) -> GemType {
-    let dist = WeightedIndex::new(ls.iter().map(|x| x.weight)).unwrap();
-    ls[dist.sample(&mut thread_rng())].clone()
-}
-fn choose_random_gem_attribute(ls: &Vec<GemAttribute>) -> GemAttribute {
-    let dist = WeightedIndex::new(ls.iter().map(|x| x.weight)).unwrap();
-    ls[dist.sample(&mut thread_rng())].clone()
 }
